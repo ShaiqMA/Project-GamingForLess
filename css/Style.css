@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Arimo';
+    src: url("/fonts/Arimo-Regular.ttf");
+}
+@font-face {
+    font-family: 'Arimo Bold';
+    src: url('/fonts/Arimo-Bold.ttf');
+}
+body{
+    background-color: black;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.Nav{
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    border-bottom: solid white 1px;
+    height: 2cm;
+}
+.Logo{
+    width: 3cm;
+}
+.Pages a:any-link{
+    font-family: 'Arimo';
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 25px;
+}
+
