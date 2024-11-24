@@ -13,14 +13,37 @@
             <div class="Pages">
                 <a href="Cheapest.html">CHEAPEST $</a>
                 <a href="">LOW BUDGET $$</a>
-                <a href="">ITEMS PER BRAND</a>  
-                <a class="Contact" href="">CONTACT US</a>
+                <a href="">ITEMS PER BRAND</a>
+                <a id="contact" href="">CONTACT US</a>
+                <img class="Mail" src="images/Mail icon.png" alt="">
+            </div>
+            <div class="MobileNav">
+                <button class="hamburger-button"> <img id="navimg" src="/images/Hamburger button.png" alt=""> </button>
+                
             </div>
             
         </Nav>
+            <div class="nav-links">
+                <a href="Cheapest.html">CHEAPEST $</a>
+                <a href="">LOW BUDGET $$</a>
+                <a href="">ITEMS PER BRAND</a>
+                <a href="">CONTACT US<img class="Mail" src="images/Mail icon.png" alt=""></a>
+                
+            </div>
     </header>
     <footer>
 
     </footer>
+    <script>    
+    document.querySelector('.hamburger-button').addEventListener('click', function(){
+       const Nav = document.querySelector('.nav-links')
+       if (Nav.style.display === 'none') {
+        Nav.style.display = 'block';
+       } else {
+        Nav.style.display = 'none';
+       }
+    })
+
+    </script>
 </body>
 </html>

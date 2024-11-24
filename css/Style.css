@@ -30,4 +30,71 @@ body{
     padding-left: 10px;
     padding-right: 25px;
 }
+#contact{
+    align-items: center;
+    position: absolute;
+    right: 1cm;
+    
+}
+.Mail{
+    width: 0.9cm;
+    height: 0.54cm;
+    float: right;
+    align-items: center;
+    position: absolute;
+    right: 0.5cm; 
+}
+.MobileNav{
+    display: none;
+}
+@media screen and (max-width: 23cm) {
+    .Pages{
+        display: none;
+    }
+    .MobileNav{
+        display: block;
+        position: absolute;
+        right: 0.5cm;
+        align-items: center;
+        flex-direction: column;
+    }
+   
+    .hamburger-button{
+        display: block;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        align-content:center;
+        border: none;
+    }
 
+    #navimg{
+        width: 1cm;
+    }
+    .nav-links a:any-link{
+        color: rgb(255, 255, 255);
+        padding-top: cm;
+        padding-right: 1cm;
+        border: solid white 1px;
+        align-items: vertical;
+        text-align: center;
+    }
+    .nav-links a{
+      font-family: 'Arimo';
+        color: white;
+        text-decoration: none;
+        display: flex;
+    }
+    }
+    .Mail{
+        height: 0.40cm;
+        width: 0.6cm;
+        align-items: center;
+        padding-right: 8.8cm;
+        padding-top: 3px;
+    }
+    .nav-links{
+        align-items: center;
+        position: absolute;
+        right: -0.8cm;
+        
+    }
