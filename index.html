@@ -8,42 +8,40 @@
 </head>
 <body>
     <header>
-        <Nav class="Nav">
-            <a href="index.html"><img class="Logo" src="images/Logo transparent.png"/></a>
-            <div class="Pages">
-                <a href="Cheapest.html">CHEAPEST $</a>
-                <a href="">LOW BUDGET $$</a>
-                <a href="">ITEMS PER BRAND</a>
-                <a id="contact" href="">CONTACT US</a>
-                <img class="Mail" src="images/Mail icon.png" alt="">
-            </div>
+        <Nav>
+            <Div class="Nav">
+                <a href="index.html"><img class="Logo" src="images/Logo transparent.png"/></a>
+                <div class="Pages">
+                    <a href="Cheapest.html">CHEAPEST $</a>
+                    <a href="">LOW BUDGET $$</a>
+                    <a href="">ITEMS PER BRAND</a>
+                    <a id="contact" href="">CONTACT US</a>
+                    <img class="Mail" src="images/Mail icon.png" alt="">
+                    
+                </div>
+            </Div>
             <div class="MobileNav">
                 <button class="hamburger-button"> <img id="navimg" src="/images/Hamburger button.png" alt=""> </button>
-                
+                <div id="menu" class="nav-links">
+                    <a href="Cheapest.html">CHEAPEST $</a>
+                    <a href="">LOW BUDGET $$</a>
+                    <a href="">ITEMS PER BRAND</a>
+                    <div>
+                    <div class="Contactdiv">
+                        <a class="contactmob" href="">CONTACT US<img class="Mailmob" src="images/Mail icon.png" alt=""></a>
+                    </div>
+                </div>
             </div>
+        </Nav>    
+
             
-        </Nav>
-            <div class="nav-links">
-                <a href="Cheapest.html">CHEAPEST $</a>
-                <a href="">LOW BUDGET $$</a>
-                <a href="">ITEMS PER BRAND</a>
-                <a href="">CONTACT US<img class="Mail" src="images/Mail icon.png" alt=""></a>
-                
-            </div>
+        
+        
+             
     </header>
     <footer>
 
     </footer>
-    <script>    
-    document.querySelector('.hamburger-button').addEventListener('click', function(){
-       const Nav = document.querySelector('.nav-links')
-       if (Nav.style.display === 'none') {
-        Nav.style.display = 'block';
-       } else {
-        Nav.style.display = 'none';
-       }
-    })
-
-    </script>
+    <script src="/js/index.js"></script> 
 </body>
 </html>

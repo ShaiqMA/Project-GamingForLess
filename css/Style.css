@@ -13,11 +13,15 @@ body{
     padding: 0;
     margin: 0;
 }
+Nav{
+   border-bottom: solid white 1px; 
+   display: flex;
+}
 .Nav{
     display: flex;
     justify-content:left;
     align-items:center;
-    border-bottom: solid white 1px;
+    align-items:center;
     height: 2cm;
 }
 .Logo{
@@ -52,49 +56,80 @@ body{
         display: none;
     }
     .MobileNav{
-        display: block;
-        position: absolute;
+        display: contents;
+        position: relative;
         right: 0.5cm;
-        align-items: center;
         flex-direction: column;
     }
    
+    *{
+        padding: 0;
+        margin: 0;
+    }
     .hamburger-button{
-        display: block;
+        display: flex;
         color: rgb(255, 255, 255);
         background-color: black;
-        align-content:center;
         border: none;
+        position: absolute;
+        justify-content:center;
+        align-content:center;
+        text-align:center;
+        right: 0cm;
+        padding-top: 10px;
+        padding-right: 10px;
     }
 
     #navimg{
-        width: 1cm;
+        width: 1.5cm;
     }
     .nav-links a:any-link{
         color: rgb(255, 255, 255);
         padding-top: cm;
-        padding-right: 1cm;
+        padding: 1cm;
         border: solid white 1px;
-        align-items: vertical;
         text-align: center;
+        justify-content:center;
+        align-items: center;  
+        
     }
-    .nav-links a{
+    .nav-links a:any-link{
       font-family: 'Arimo';
         color: white;
         text-decoration: none;
         display: flex;
-    }
-    }
-    .Mail{
-        height: 0.40cm;
-        width: 0.6cm;
-        align-items: center;
-        padding-right: 8.8cm;
-        padding-top: 3px;
+        text-align: center;
+        justify-content: center;
+        align-items: center; 
     }
     .nav-links{
+        top: 2cm;
+        border: solid white 1px;
+        height: 100%;
         align-items: center;
         position: absolute;
-        right: -0.8cm;
-        
+        right: 0cm;
+        float: left;
+        float: right;
+        clear: both;
     }
+    .Contactdiv{
+       
+    }
+
+    .contactmob{
+        clear: both; 
+        position: absolute;
+        right: 0cm;
+        left: 0cm;
+        bottom: 0cm;
+        float:left;
+        float: right;
+    }
+    .Mailmob{
+        align-items: center;
+        width:  29px;
+        height: 22px;
+        padding-left: 10px;
+    }
+};
