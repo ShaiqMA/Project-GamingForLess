@@ -17,7 +17,7 @@ Nav{
    border-bottom: solid white 1px; 
    display: flex;
 }
-.Nav{
+.PC-Nav{
     display: flex;
     justify-content:left;
     align-items:center;
@@ -57,9 +57,6 @@ Nav{
     }
     .MobileNav{
         display: contents;
-        position: relative;
-        right: 0.5cm;
-        flex-direction: column;
     }
    
     *{
@@ -67,14 +64,10 @@ Nav{
         margin: 0;
     }
     .hamburger-button{
-        display: flex;
         color: rgb(255, 255, 255);
         background-color: black;
         border: none;
         position: absolute;
-        justify-content:center;
-        align-content:center;
-        text-align:center;
         right: 0cm;
         padding-top: 10px;
         padding-right: 10px;
@@ -83,48 +76,40 @@ Nav{
     #navimg{
         width: 1.5cm;
     }
-    .nav-links a:any-link{
+    .menu a:any-link{
         color: rgb(255, 255, 255);
-        padding-top: cm;
-        padding: 1cm;
-        border: solid white 1px;
-        text-align: center;
-        justify-content:center;
-        align-items: center;  
-        
-    }
-    .nav-links a:any-link{
-      font-family: 'Arimo';
-        color: white;
+        background-color: black;
+        padding-top: 1cm;
+        padding-bottom: 1cm;
+        padding-left: 0.4cm;
+        padding-right: 0.4cm;
+        border: solid white 1px;  
+        font-family: 'Arimo';
         text-decoration: none;
         display: flex;
-        text-align: center;
         justify-content: center;
-        align-items: center; 
     }
-    .nav-links{
+    .menu{
+        display: block;
         top: 2cm;
-        border: solid white 1px;
+        border-left: solid white 2px;
         height: 100%;
         align-items: center;
         position: absolute;
-        right: 0cm;
-        float: left;
-        float: right;
-        clear: both;
+        right: -6cm;
+        width: 6cm;
+        transition: right 0.3s ease;
+        z-index: 1000;
     }
-    .Contactdiv{
-       
+    .menu.active{
+        right: 0;
     }
-
     .contactmob{
-        clear: both; 
-        position: absolute;
+        position:absolute;
+        bottom: 0cm;
         right: 0cm;
         left: 0cm;
-        bottom: 0cm;
-        float:left;
-        float: right;
+        
     }
     .Mailmob{
         align-items: center;
@@ -133,3 +118,4 @@ Nav{
         padding-left: 10px;
     }
 };
+
