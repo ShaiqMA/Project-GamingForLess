@@ -33,6 +33,10 @@ Nav{
     text-decoration: none;
     padding-left: 10px;
     padding-right: 25px;
+    
+}
+.Pages a:any-link a:hover{
+    text-decoration: underline 0.15cm white;
 }
 #contact{
     align-items: center;
@@ -98,7 +102,7 @@ Nav{
         position: absolute;
         right: -6cm;
         width: 6cm;
-        transition: right 0.3s ease;
+        transition: right 0.5s ease;
         z-index: 1000;
     }
     .menu.active{
