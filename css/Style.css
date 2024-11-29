@@ -33,10 +33,14 @@ Nav{
     text-decoration: none;
     padding-left: 10px;
     padding-right: 25px;
-    
+    text-underline-offset: 0.2cm;
+    text-decoration: underline 2px rgba(0, 0, 0, 1);
+    transition: text-decoration-color ease 300ms, text-underline-offset ease 300ms;
+    z-index: 1000;
 }
-.Pages a:any-link a:hover{
-    text-decoration: underline 0.15cm white;
+.Pages a:hover{
+    text-decoration-color: rgb(252, 252, 252);
+      text-underline-offset: 0.1cm;
 }
 #contact{
     align-items: center;
@@ -80,7 +84,7 @@ Nav{
     #navimg{
         width: 1.5cm;
     }
-    .menu a:any-link{
+    .menu a:any-link {
         color: rgb(255, 255, 255);
         background-color: black;
         padding-top: 1cm;
@@ -89,9 +93,17 @@ Nav{
         padding-right: 0.4cm;
         border: solid white 1px;  
         font-family: 'Arimo';
-        text-decoration: none;
         display: flex;
         justify-content: center;
+        text-decoration: underline 2px rgba(0, 0, 0, 1);
+        text-underline-offset: 0.2cm;
+        transition: text-decoration-color ease 300ms, text-underline-offset ease 300ms;
+        z-index: 1000;
+    }
+    
+    .menu a:hover{
+      text-decoration-color: rgb(252, 252, 252);
+      text-underline-offset: 0.1cm;
     }
     .menu{
         display: block;
@@ -117,7 +129,7 @@ Nav{
     }
     .Mailmob{
         align-items: center;
-        width:  29px;
+        width:  33px;
         height: 22px;
         padding-left: 10px;
     }
