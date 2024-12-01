@@ -59,6 +59,8 @@ Nav{
 .MobileNav{
     display: none;
 }
+
+/*Slidein Menu voor kleinere schermen*/
 @media screen and (max-width: 23cm) {
     .Pages{
         display: none;
@@ -109,6 +111,7 @@ Nav{
         display: block;
         top: 2cm;
         border-left: solid white 2px;
+        background-color: black;
         height: 100%;
         align-items: center;
         position: absolute;
@@ -135,3 +138,177 @@ Nav{
     }
 };
 
+/*image slider homepage*/
+body{
+    margin: 0;
+}
+Nav{
+    margin-bottom: 10px;
+}
+.slidersect{
+    background-color: #fff;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.slider{
+    box-shadow: 0px 0px 10px 0px;
+    width: 1300px;
+    max-width: 100vw;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.list{
+    position:absolute;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+}
+.list img{
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit:cover;
+    background-color: black;
+    
+}
+.buttons{
+    position: absolute;
+    top: 42%;
+    left: -1%;
+    width: 102%;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+}
+.buttons button img{
+     width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.dots{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s;
+}
+.dots li.active{
+ width: 30px;   
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.item{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.item .Button1{
+    top: 75%;
+    position: absolute;
+    background-color: black;
+    color: #fff;
+    font-family: 'Arimo';
+    padding: 20px;
+    border: solid 1px;
+    box-shadow: 0px 0px 10px 0px;
+    transition: text-decoration-color 300ms ease , text-underline-offset ease 300ms;
+    text-underline-offset: 0.2cm;
+}
+
+.Button1:hover{
+    text-decoration: underline 2px white;
+    text-underline-offset: 0.1cm;
+}
+
+.item .Button2{
+    top: 75%;
+    position: absolute;
+    background-color: black;
+    color: #fff;
+    font-family: 'Arimo';
+    padding: 20px;
+    border: solid 1px;
+    box-shadow: 0px 0px 10px 0px;
+    transition: text-decoration-color 300ms ease , text-underline-offset ease 300ms;
+    text-underline-offset: 0.2cm;
+}
+
+.Button2:hover{
+    text-decoration: underline 2px white;
+    text-underline-offset: 0.1cm;
+}
+
+.item .Button3{
+    top: 75%;
+    position: absolute;
+    background-color: black;
+    color: #fff;
+    font-family: 'Arimo';
+    padding: 20px;
+    border: solid 1px;
+    box-shadow: 0px 0px 10px 0px;
+    transition: text-decoration-color 300ms ease , text-underline-offset ease 300ms;
+    text-underline-offset: 0.2cm;
+}
+
+.Button3:hover{
+    text-decoration: underline 2px white;
+    text-underline-offset: 0.1cm;
+}
+
+
+
+/*smaller slider for smaller screens*/
+@media screen and (max-width: 23cm) {
+    .slider{
+        height: 400px;
+    }
+
+    .item .Button1{
+        position: absolute;
+        top: 70%;
+    }
+    .item .Button2{
+        position: absolute;
+        top: 70%;
+    }
+    .item .Button3{
+        position: absolute;
+        top: 70%;
+    }
+}
+
+.popularItems{
+    
+}
