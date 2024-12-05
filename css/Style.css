@@ -6,6 +6,10 @@
     font-family: 'Arimo Bold';
     src: url('/fonts/Arimo-Bold.ttf');
 }
+html{
+    overflow: hiden;
+} 
+
 body{
     background-color: black;
 }
@@ -62,13 +66,16 @@ Nav{
 
 /*Slidein Menu voor kleinere schermen*/
 @media screen and (max-width: 23cm) {
+    body{
+        overflow:scroll;
+        overflow-x: hidden;
+    }
     .Pages{
-        display: none;
+        display: none;  
     }
     .MobileNav{
         display: contents;
     }
-   
     *{
         padding: 0;
         margin: 0;
@@ -85,23 +92,25 @@ Nav{
 
     #navimg{
         width: 1.5cm;
+       
     }
     .menu a:any-link {
         color: rgb(255, 255, 255);
-        background-color: black;
+        background-color: rgb(0, 0, 0);
         padding-top: 1cm;
         padding-bottom: 1cm;
         padding-left: 0.4cm;
         padding-right: 0.4cm;
         border: solid white 1px;  
         font-family: 'Arimo';
-        display: flex;
+        display:flex;
         justify-content: center;
         text-decoration: underline 2px rgba(0, 0, 0, 1);
         text-underline-offset: 0.2cm;
         transition: text-decoration-color ease 300ms, text-underline-offset ease 300ms;
         z-index: 1000;
     }
+
     
     .menu a:hover{
       text-decoration-color: rgb(252, 252, 252);
@@ -110,25 +119,27 @@ Nav{
     .menu{
         display: block;
         top: 2cm;
-        border-left: solid white 2px;
-        background-color: black;
+        border-left: solid white 1px;
+        background-color: rgb(0, 0, 0);
         height: 100%;
+        position:absolute;
         align-items: center;
-        position: absolute;
         right: -6cm;
         width: 6cm;
         transition: right 0.5s ease;
-        z-index: 1000;
+        z-index: 10000;
     }
+    
     .menu.active{
         right: 0;
     }
+    
     .contactmob{
         position:absolute;
-        bottom: 0cm;
+        bottom: 0%;
         right: 0cm;
-        left: 0cm;
-        
+        left: 0cm;  
+           
     }
     .Mailmob{
         align-items: center;
@@ -146,9 +157,11 @@ Nav{
     margin-bottom: 10px;
 }
 .slidersect{
+
     background-color: #fff;
     padding-bottom: 10px;
     padding-top: 10px;
+    overflow: hidden;
 }
 .slider{
     box-shadow: 0px 0px 10px 0px;
@@ -173,6 +186,7 @@ Nav{
     height: 100%;
     object-fit:cover;
     background-color: black;
+    overflow: hidden;
     
 }
 .buttons{
@@ -309,6 +323,55 @@ Nav{
     }
 }
 
-.popularItems{
+.poptxt{
+color: #fff;
+text-align: center;
+position: relative;
+font-family: "Arimo";
+top: 20px;
+}
+
+.flex-container{
+    display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
+
+}
+.itemspopular {
+width: 250px;
+height: 250px;
+margin-top: 60px;
+margin-bottom: 40px;
+margin-left: 20px;
+margin-right: 20px;
+border: solid 1px white;
+transition: transform  0.3s ease, background-color 0.3s ease;
+}
+.itemspopular:hover{
+background-color: black;
+transform:scale(1.2);
+
+}
+
+@media screen and (max-width: 23cm) {
+    .flex-container{
+        display: flex; 
+      flex-wrap: wrap;
+      justify-content: space-between;
+      justify-content: center;
+      text-align: center;
+
+  }
+  .itemspopular {
+    width: 180px;
+    height: 180px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 6px;
+    margin-right: 6px;
+    border: solid 1px white;
     
+}
 }
