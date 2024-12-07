@@ -67,14 +67,18 @@ Nav{
 /*Slidein Menu voor kleinere schermen*/
 @media screen and (max-width: 23cm) {
     body{
+        position: relative;
         overflow:scroll;
         overflow-x: hidden;
     }
     .Pages{
-        display: none;  
+        display: none; 
+        
     }
     .MobileNav{
         display: contents;
+        
+        overflow: hidden;
     }
     *{
         padding: 0;
@@ -117,21 +121,24 @@ Nav{
       text-underline-offset: 0.1cm;
     }
     .menu{
-        display: block;
         top: 2cm;
         border-left: solid white 1px;
+        border-right: solid white 1px;
         background-color: rgb(0, 0, 0);
         height: 100%;
-        position:absolute;
+        position:fixed;
         align-items: center;
-        right: -6cm;
+        right: -6.1cm;
         width: 6cm;
         transition: right 0.5s ease;
         z-index: 10000;
+       
     }
-    
     .menu.active{
+        position: absolute;
+        display:block;
         right: 0;
+        
     }
     
     .contactmob{
@@ -333,19 +340,18 @@ top: 20px;
 
 .flex-container{
     display: flex; 
-  flex-wrap: wrap;
-  justify-content: space-between;
-  justify-content: center;
-  text-align: center;
-
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
 }
 .itemspopular {
-width: 250px;
-height: 250px;
+width: 280px;
+height: 280px;
 margin-top: 60px;
 margin-bottom: 40px;
-margin-left: 20px;
-margin-right: 20px;
+margin-left: 3.2%;
+margin-right: 3.2%;
 border: solid 1px white;
 transition: transform  0.3s ease, background-color 0.3s ease;
 }
@@ -362,16 +368,127 @@ transform:scale(1.2);
       justify-content: space-between;
       justify-content: center;
       text-align: center;
-
+      border-bottom: ;
   }
   .itemspopular {
     width: 180px;
     height: 180px;
+    margin-top: 8%;
+    margin-bottom: -1.5%;
+    margin-left: 0.5%;
+    margin-right: 0.5%; 
+    border: solid 1px white; 
+}
+
+}
+#categories{
+    display: flex;
+    border-top: solid white 1px;
     margin-top: 60px;
-    margin-bottom: 40px;
-    margin-left: 6px;
-    margin-right: 6px;
-    border: solid 1px white;
-    
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 60px;
+
+}
+.flex-container2{
+    overflow: hidden;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: center;
+} 
+
+.categorie{ 
+    width: 5cm; 
+    height: 5cm; 
+    margin-left: 20px;
+    margin-right: 20px;
+    border: solid 10px white;
+}
+@media screen and (min-width: 1440px){
+    .categorie{ 
+        width: 350px; 
+        height: 350px; 
+        margin-left: 20px;
+        margin-right: 20px;
+        border: solid 10px white;
+    }
+} 
+@media screen and (max-width: 1440px){
+    .categorie{ 
+        width: 300px; 
+        height: 300px; 
+        margin-left: 20px;
+        margin-right: 20px;
+        border: solid 10px white;
+    }
+}          
+@media screen and (max-width: 1050px){
+.categorie{ 
+    width: 250px; 
+    height: 250px; 
+    margin-left: 20px;
+    margin-right: 20px;
+    border: solid 10px white;
 }
 }
+
+@media screen and (max-width: 930px){
+    .categorie{ 
+        width: 200px; 
+        height: 200px; 
+        margin-left: 20px;
+        margin-right: 20px;
+        border: solid 10px white;
+    }
+    }
+
+@media screen and (max-width: 820px){
+
+    .flex-container2{
+        overflow: hidden;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        margin-top: 60px;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    .categorie{ 
+        grid-row-end: span 3;
+        width: 400px; 
+        height: 200px; 
+        margin-left: 20px;
+        margin-right: 20px;
+        border: solid 10px white;
+
+    }
+        }
+@media screen and (max-width: 440px){
+
+    .flex-container2{
+        overflow: hidden;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        margin-top: 60px;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    .categorie{ 
+        grid-row-end: span 3;
+        width: 300px; 
+        height: 200px; 
+        margin-left: 20px;
+        margin-right: 20px;
+        border: solid 10px white;
+
+    }
+        }
