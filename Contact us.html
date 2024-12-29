@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/ContactUs.css">
+</head>
+<body>
+    <header>
+        <Nav>
+            <Div class="PC-Nav">
+                <a href="index.html"><img class="Logo" src="images/Logo transparent.png"/></a>
+                <div class="Pages">
+                    <a href="Cheapest.html">CHEAPEST $</a>
+                    <a href="Low budget.html">LOW BUDGET $$</a>
+                    <a href="Items Per Brand.html">ITEMS PER BRAND</a>
+                    <a id="contact" href="Contact us.html">CONTACT US</a>
+                    <img class="Mail" src="images/Mail icon.png" alt="">
+                </div>
+            </Div>
+            <div class="MobileNav">
+                <button onclick="toggleMenu()" class="hamburger-button"> <img id="navimg" src="/images/Hamburger button.png" alt=""> </button>
+                <div id="menu" class="menu">
+                    <a href="Cheapest.html">CHEAPEST $</a>
+                    <a href="Low budget.html">LOW BUDGET $$</a>
+                    <a href="Items Per Brand.html">ITEMS PER BRAND</a>
+                    <a class="contactmob" href="Contact us.html">CONTACT US<img class="Mailmob" src="images/Mail icon.png" alt=""></a>
+                </div>
+            </div>
+        </Nav>       
+    </header>
+    <main>
+        <section class="contactform">
+            
+                <form action="#">
+                    <h1 class="header">CONTACT US</h1>
+
+                    <label for="name">FULL NAME</label>
+                    <input type="text" name="Full name" id="name">
+
+                    <label for="mail">E-MAIL</label>
+                    <input type="email" name="E-mail" id="mail">
+
+                    <label for="comment">COMMENT</label>
+                    <input type="text" name="Comment" id="comment">
+                    
+                    
+                    <input type="button" value="SEND" id="Submit">
+                </form>
+        </section>
+         <aside>
+            <section>
+                <img id="start" src="/images/Contact image 1.png" class="img">   
+                <h2 class="contactheader">GAMEFORLESS HQ</h2>
+                <p class="contactp">
+                    STREET NAME 1 <br>
+                    POSTAL CODE <br>
+                    CITY <br>
+                    COUNTRY <br>
+                </p>
+            </section>
+                <img src="/images/Contact image 2.png" class="img">
+                <h2 class="contactheader">CUSTOMER SERVICE CENTER</h2>
+                <p class="contactp">
+                    +1 000 000 00 <br>
+                    7:30 a.m. – 5:30 p.m. PT, Monday – Friday 
+                    <br>
+                    (except holidays)
+                </p>
+            <section>
+                <img src="images/Contact image 3.png" class="img">
+                <h2 class="contactheader">CUSTOMER SERVICE</h2>
+                <p class="contactp" id="end">
+                    EMAIL <br>
+                    EMAIL@EMAIL.COM <br>
+                </p>
+            </section>
+            <section>
+
+            </section>
+        </aside>
+    </main>
+   
+    <footer>
+        <div id="footerpages1" class="footerpages">
+            <a href="http://"><p>ABOUT US</p></a>
+            <a href=""><p>CONTACT US</p></a>
+            <a href=""><p>NEWS</p></a>  
+        </div>
+        <div id="footerpages2" class="footerpages">
+            <a href=""><p>PAYMENT METHODS</p></a>
+            <a href=""><p>SHIPPING</p></a>
+            <a href=""><p>RETURN POLICY</p></a>
+        </div>
+        <div id="footerpages3" class="footerpages">
+            <a href="http://"><p>SOCIAL MEDIA</p></a>
+                <div class="icon">
+                    <img src="images/Insta-icon.png" alt="">
+                    <img src="images/facebook_icon_244944.webp" alt="">
+                    <img src="images/X-icon.png" alt="">
+                </div>
+            </div>  
+    </footer>
+    
+    <script src="js/ContactUs.js"></script>
+</body>
+</html>
