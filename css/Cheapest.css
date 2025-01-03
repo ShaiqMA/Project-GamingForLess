@@ -161,9 +161,208 @@ Nav{
     margin-bottom: 0px;
 }
 
+aside{
+    font-family: 'Arimo';
+    color: white;
+    display:block;
+    width: 20%;
+    height: 100%;
+    font-size: 100%;
+}
+.block1{
+    display: flex;
+    border-right: solid white 1px;
+    width: 100%;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.block2{
+    margin-top: -15px;
+    display: flex;
+    width: 100%;
+    border-bottom: solid white 1px;
+    border-right: solid white 1px;
+}
+#filtertext{
+    padding-left: 5px;
+}
+.filters{
+    display: flex;
+    border-right: solid white 1px;
+    width: 100%;
+    height: 100vw;
+    text-align: left;
+    flex-direction: column;
+    border-right: solid white 1px;
+    padding-top: 10px;
+    
+}
+.filterstxt{
+    padding-left: 10px;
+}
+.colorbuttons{
+    padding-left: 10px;
+    margin-top: -18px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+.colorbutton{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid white 2px;
+}
+.colorbutton:hover{
+   border: solid white 4px; 
+}
+
+#color2{
+    background-color: green;
+}
+#color3{
+    background-color: blue;
+}
+#color4{
+    background-color: red; 
+}
+#color5{
+    background-color: black;
+}
+.catbutton{
+    background: none;
+    color: white;
+    border: none;
+    text-align: left;
+    padding-left: 10px;
+    text-decoration: underline 2px rgba(0, 0, 0, 1);
+    text-underline-offset: 0.2cm;
+    transition: text-decoration-color ease 300ms, text-underline-offset ease 300ms;
+}
+.catbutton:hover{
+    text-decoration-color: rgb(252, 252, 252);
+    text-underline-offset: 0.1cm;
+}
+.aside{
+    display: none;
+}
+.filter-button{
+    display: none;
+}
+
+aside{
+    float: left;
+}
+main{
+ overflow: hidden;   
+}
+.itemlist{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    row-gap: 60px ;
+    height: 100vw;
+    vertical-align: top;
+    position: relative;
+    top: 60px;
+    left: 1%;
+    
+}
+.item{
+    position: relative;
+    width: 90%;
+    border: solid rgb(255, 255, 255) 1px;
+    transition: transform  0.3s ease, background-color 0.3s ease;
+}
+.item:hover{
+    background-color: black;
+    transform:scale(1.2);
+}
+.item img{
+    width: 40px;
+    height: 40px;
+    position:absolute;
+    color: white;  
+    bottom: -42px;
+    right: 0;
+    margin: 0; 
+}
+
+.details{
+    font-family: 'arimo';
+    
+    position:absolute;
+    color: white;  
+    bottom: -42px;
+    left: 0;
+    margin: 0;   
+}
 
 
 
+
+@media screen and (max-width: 950px){
+*{
+    padding: 0;
+    margin: 0;
+}
+.pc-filter{
+    display: none;
+}
+body{
+    height: 230vw
+}
+
+.aside{
+    background-color: black;
+    width: 50%;
+    position: absolute;
+    left: -50%; 
+    z-index: 10000;
+   
+   
+}
+.filters{
+    height: 230vw;
+}
+.aside.active{
+    display: block;
+    left: 0px;
+}
+main{
+    height: 230vw;
+}
+.itemlist{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    row-gap: 60px ;
+    vertical-align: top;
+   
+    top: 60px;
+    left: 1%;
+    
+}
+.item{
+    height: 25vw;
+    z-index: 10;
+}
+#filterimg{
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+}
+.filter-button{
+    display: block;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    position: absolute;
+    right: 0cm;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+}
 
 
 
