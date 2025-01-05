@@ -72,12 +72,11 @@ Nav{
     }
     .Pages{
         display: none; 
-        
+        overflow: hidden;
     }
     .MobileNav{
         display: contents;
         
-        overflow: hidden;
     }
     *{
         padding: 0;
@@ -114,7 +113,9 @@ Nav{
         z-index: 1000;
     }
 
-    
+    main{
+        height: 280vw;
+    }
     .menu a:hover{
       text-decoration-color: rgb(252, 252, 252);
       text-underline-offset: 0.1cm;
@@ -136,6 +137,7 @@ Nav{
     .menu.active{
         display:block;
         right: 0;
+        
         
     }
     

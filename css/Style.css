@@ -374,6 +374,10 @@ justify-content: center;
 text-align: center;
 }
 .itemspopular {
+position: relative;
+display:flex;
+align-items: center;
+justify-content: center;    
 width: 280px;
 height: 280px;
 margin-top: 60px;
@@ -388,7 +392,11 @@ background-color: black;
 transform:scale(1.2);
 
 }
-
+.itemspopular img{
+    position: absolute;
+    width: 80%;
+    height: auto;
+}
 @media screen and (max-width: 23cm) {
     .flex-container{
         display: flex; 

@@ -72,11 +72,11 @@ Nav{
     }
     .Pages{
         display: none; 
-        
+        overflow: hidden;
     }
     .MobileNav{
         display: contents;
-        overflow: hidden;
+        
     }
     *{
         padding: 0;
@@ -113,7 +113,9 @@ Nav{
         z-index: 1000;
     }
 
-    
+    main{
+        height: 280vw;
+    }
     .menu a:hover{
       text-decoration-color: rgb(252, 252, 252);
       text-underline-offset: 0.1cm;
@@ -123,7 +125,7 @@ Nav{
         border-left: solid white 1px;
         border-right: solid white 1px;
         background-color: rgb(0, 0, 0);
-        height: 163.5vh;
+        height: 96.5%;
         position:fixed;
         align-items: center;
         right: -6.1cm;
@@ -133,9 +135,9 @@ Nav{
        
     }
     .menu.active{
-        position: absolute;
         display:block;
         right: 0;
+        
         
     }
     
@@ -153,243 +155,47 @@ Nav{
         padding-left: 10px;
     }
 };
-
 body{
-    margin: 0;
-}
-Nav{
-    margin-bottom: 0px;
-}
-
-aside{
-    font-family: 'Arimo';
-    color: white;
-    display:block;
-    width: 20%;
-    height: 100%;
-    font-size: 100%;
-}
-.block1{
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    border-right: solid white 1px;
-    width: 100%;
-    height: 110px;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-}
-.block2{
-    margin-top: -15px;
-    display: flex;
-    width: 100%;
-    border-bottom: solid white 1px;
-    border-right: solid white 1px;
-}
-#filtertext{
-    padding-left: 5px;
-}
-.filters{
-    display: flex;
-    border-right: solid white 1px;
-    width: 100%;
-    height: 100vw;
-    text-align: left;
-    flex-direction: column;
-    border-right: solid white 1px;
-    padding-top: 10px;
-    
-}
-.filterstxt{
-    padding-left: 10px;
-}
-.colorbuttons{
-    padding-left: 10px;
-    margin-top: -18px;
-    padding-bottom: 10px;
-    align-items: center;
-}
-.colorbutton{
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    border: solid white 2px;
-}
-.colorbutton:hover{
-   border: solid white 4px; 
-}
-
-#color2{
-    background-color: green;
-}
-#color3{
-    background-color: blue;
-}
-#color4{
-    background-color: red; 
-}
-#color5{
-    background-color: black;
-}
-.catbutton{
-    border: none;
-}
-.catbutton a{
-    text-decoration: none;
-}
-.catbutton a p{
-    background: black;
-    color: white;
-    border: none;
-    text-align: left;
-    padding-left: 10px;
-    text-decoration: underline 2px rgba(0, 0, 0, 1);
-    text-underline-offset: 0.2cm;
-    transition: text-decoration-color ease 300ms, text-underline-offset ease 300ms;
-}
-.catbutton a p:hover{
-    text-decoration-color: rgb(252, 252, 252);
-    text-underline-offset: 0.1cm;
-}
-.aside{
-    display: none;
-}
-.filter-button{
-    display: none;
-}
-
-aside{
-    float: left;
+}  
+h1{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-family: 'arimo';
 }
 main{
- overflow: hidden;   
-}
-.itemlist{
-    display: grid;
-    grid-template-columns: repeat(4, minmax(100px, 1fr));
-    row-gap: 65px ;
-    height: 100vw;
-    vertical-align: top;
-    position: relative;
-    top: 60px;
-    left: 1%;
-    
-}
-.item{
-    position: relative;
-    width: 90%;
-    border: solid rgb(255, 255, 255) 1px;
-    transition: transform  0.3s ease, background-color 0.3s ease;
-}
-.item:hover{
-    background-color: black;
-    transform:scale(1.2);
-}
-.item a img{
-    width: 40px;
-    height: 40px;
-    position:absolute;
-    color: white;  
-    bottom: -42px;
-    right: 0;
-    margin: 0; 
-}
-.item{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-     
-}
-
-.Itemimage{
-    position: absolute;
-    width: 80%;
-    height: auto;
-}
-
-
-.details{
+    color: white;
     font-family: 'arimo';
-    position:absolute;
-    color: white;  
-    bottom: -65px;
-    left: 0;
-    margin: 0;   
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
 }
-
-
-
-
-
-@media screen and (max-width: 950px){
-*{
-    padding: 0;
-    margin: 0;
-}
-.pc-filter{
-    display: none;
-}
-body{
-    height: 230vw
-}
-
-.aside{
-    background-color: black;
-    width: 50%;
-    position: absolute;
-    left: -50%; 
-    z-index: 10000;
-   
-   
-}
-.filters{
-    height: 280vw;
-}
-.aside.active{
-    display: block;
-    left: 0px;
-}
-main{
-    height: 280vw;
-}
-.itemlist{
-    display: grid;
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
-    row-gap: 65px ;
-    vertical-align: top;
-   
-    top: 60px;
-    left: 1%;
+.text {
+    width: 50vw;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     
 }
-.item{
-    height: 25vw;
-    z-index: 10;
+.text p{
+    margin-bottom: 50px;
 }
-#filterimg{
-    width: 30px;
-    height: 30px;
-    padding-top: 3px;
+.text img{
+    margin-top: -80px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    
 }
-.filter-button{
-    display: block;
-    color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    position: absolute;
-    right: 0cm;
-    padding-top: 10px;
-    padding-right: 10px;
-}
-.details{
- 
-    bottom: -65px;
-    left: 0;
-    margin: 0;   
-}
-}
-
-
 
 footer{
     background-color: white;
@@ -401,7 +207,6 @@ footer{
     justify-content: center;
     justify-content: space-between;
     text-align: center;
-    position: relative;
 }
 .footerpages a{
     text-decoration: none;

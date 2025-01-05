@@ -251,6 +251,10 @@ aside{
     text-decoration-color: rgb(252, 252, 252);
     text-underline-offset: 0.1cm;
 }
+.catbutton:hover{
+    text-decoration-color: rgb(252, 252, 252);
+    text-underline-offset: 0.1cm;
+}
 .aside{
     display: none;
 }
